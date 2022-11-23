@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010101;
+}
+
+.header {
+    background-color: transparent;
+    padding: 10px 72px 10px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999px;
+}
+
+.header a img {
+    height: 64px;
+}
+
+.header-navbar {
+    display: flex;
+    column-gap: 32px;
+}
+
+.header-navbar-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #a4a4a4;
+    transition: 1s;
+}
+
+.header-navbar-item:hover {
+    color: #e4e4e4;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section-1 {
+    background-color: #010101;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.main-section-1-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+    margin-bottom: 3rem;
+}
+
+.main-section-1-about img {
+    height: 200px;
+}
+
+.main-section-1-about-text {
+    width: 40%;
+}
+
+.main-section-1-about-text h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #e4e4e4;
+}
+
+.main-section-1-about-text p {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #a4a4a4;
+    text-align: start;
+}
+
+.main-section-1 a img {
+    width: 200px;
+}
+
+.main-section-2 {
+    background-image: url(../img/film1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-section-2 ul {
+    padding: 116px;
+    list-style: url(../img/list-style.png) inside;
+}
+
+.main-section-2 ul li {
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 24px;
+    color: #a0a0a0;
+}
+
+.main-section-2 ul li a {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    color: #a0a0a0;
+    transition: 1s;
+}
+
+.main-section-2 ul li a:hover {
+    color: #e4e4e4;
+}
+
+.main-section-3 {
+    padding: 72px;
+    background-color: #1C1C1C;
+}
+
+.main-section-3 h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #e4e4e4;
+}
+
+.main-section-3 p {
+    font-family: 'Sarala', sans-serif;
+    color: #a4a4a4;
+}
+
+.footer {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #a4a4a4;
+}
+
+.footer p a {
+    color: #B11E31;
+    transition: 1s;
+}
+
+.footer p a:hover {
+    color: #BA0001;
+}
+
+.footer img {
+    height: 64px;
+}
+
+@media(max-width: 850px) {
+    .footer p {
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 640px){
+    .header {
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .main-section-1 {
+        height: 875px;
+        padding-top: 72px;
+    }
+
+    .main-section-1-about {
+        flex-direction: column;
+    }
+
+    .main-section-1-about-text {
+        width: 85%;
+    }
+
+    .main-section-1-about-text h1 {
+        text-align: center;
+    }
+
+    .main-section-1-about-text p {
+        text-align: center;
+    }
+
+    .main-section-2 ul {
+        padding: 48px;
+        list-style: url(../img/list-style.png) inside;
+    }
+}
+
+@media(max-width: 425px){
+    .main-section-1 {
+        margin-top: 48px;
+    }
+
+    .main-section-2 ul li {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px){
+    .footer p {
+        font-size: 10px;
+        width: 90%;
+        text-align: center;
+    }
+}

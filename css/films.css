@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010101;
+}
+
+.header {
+    background-color: transparent;
+    padding: 10px 72px 10px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+}
+
+.header a img {
+    height: 64px;
+}
+
+.header-navbar {
+    display: flex;
+    column-gap: 32px;
+}
+
+.header-navbar-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #a4a4a4;
+    transition: 1s;
+}
+
+.header-navbar-item:hover {
+    color: #e4e4e4;
+}
+
+.main-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #010101;
+    padding: 72px 0;
+    height: 1080px;
+}
+
+.main-section-1 h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #e4e4e4;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.main-section-1 p {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #a4a4a4;
+    text-align: center;
+}
+
+.main-section-1-img {
+    border-radius: 10%;
+    height: 320px;
+    margin: 32px;
+}
+
+.main-section-1 a img {
+    width: 200px;
+}
+
+.main-section-2 {
+    padding: 64px 0;
+    background-image: url(../img/film2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-section-2 ul { 
+    padding-bottom: 32px;
+}
+
+.main-section-2 ul h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #e4e4e4;
+    text-align: center; 
+    padding-bottom: 32px;
+}
+
+.main-section-2 ul li {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a4a4a4;
+    text-align: center;
+}
+
+.footer {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #a4a4a4;
+}
+
+.footer p a {
+    color: #B11E31;
+    transition: 1s;
+}
+
+.footer p a:hover {
+    color: #BA0001;
+}
+
+.footer img {
+    height: 64px;
+}
+
+@media(max-width: 1080px){
+    .main-section-1 h1 {
+        width: 95%;
+    }
+    
+    .main-section-1 p {
+        width: 90%;
+    }
+}
+
+@media(max-width: 850px) {
+    .main-section-1 {
+        padding: none;
+    }
+
+    .footer p {
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 630px) {
+    .main-section-1-img {
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media(max-width: 540px){
+    .header {
+        flex-direction: column;
+        position: absolute;
+    }
+
+        
+}
+
+@media(max-width: 425px){
+    .main-section-2 ul {
+        width: 95%;
+    }
+
+    .main-section-2 ul li {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px){
+    .footer p {
+        font-size: 10px;
+        width: 90%;
+        text-align: center;
+    }
+}

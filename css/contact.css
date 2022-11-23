@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010101;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: transparent;
+    padding: 10px 72px 10px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999px;
+}
+
+.header a img {
+    height: 64px;
+}
+
+.header-navbar {
+    display: flex;
+    column-gap: 32px;
+}
+
+.header-navbar-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #a4a4a4;
+    transition: 1s;
+}
+
+.header-navbar-item:hover {
+    color: #e4e4e4;
+}
+
+.main {
+    background-image: url(../img/film3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.form {
+    width: 340px;
+    height: 440px;
+    background: #1c1c1c;;
+    border-radius: 8px;
+    padding: 20px 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color:#e4e4e4;
+    border-bottom: 3px solid #e4e4e4;
+}
+
+input {
+    color: #a4a4a4;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family:'Sarala',sans-serif;
+    transition: 1s;
+    border-bottom:2px solid #a4a4a4;
+}
+
+input:focus {
+    border-bottom: 2px solid #e4e4e4;
+}
+
+form p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color:#a4a4a4;
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 32px 0 0;
+    font-family: 'Merriweather Sans',sans-serif;
+    border: 2px solid #a4a4a4;
+    border-radius: 8px;
+    background: 0;
+    color: #a4a4a4;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover {
+    background:#a4a4a4;
+    color:#fff;
+}
+
+.footer {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #a4a4a4;
+}
+
+.footer p a {
+    color: #B11E31;
+    transition: 1s;
+}
+
+.footer p a:hover {
+    color: #BA0001;
+}
+
+.footer img {
+    height: 64px;
+}
+
+@media(max-width: 850px) {
+    .footer p {
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 540px){
+    .header {
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .form {
+        width: 85%;
+        margin: 120px 0;
+    }
+}
+
+@media(max-width: 425px){
+    .footer p {
+        font-size: 12px;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px){
+    .footer p {
+        font-size: 10px;
+        width: 90%;
+        text-align: center;
+    }
+}
