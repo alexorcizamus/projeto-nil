@@ -86,6 +86,7 @@ body {
 .main-section-2 {
     padding: 64px 0;
     background-image: url(../img/film2.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -174,7 +175,10 @@ body {
         position: absolute;
     }
 
-        
+    .main-section-1 {
+        height: 875px;
+        padding-top: 72px;
+    }
 }
 
 @media(max-width: 425px){

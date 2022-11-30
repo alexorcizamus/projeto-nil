@@ -51,6 +51,8 @@ body {
 
 .main {
     background-image: url(../img/film3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +166,10 @@ button:hover {
     .form {
         width: 85%;
         margin: 120px 0;
+    }
+
+    .footer {
+        padding: 32px 0;
     }
 }
 
